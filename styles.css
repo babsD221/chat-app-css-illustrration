@@ -1,0 +1,343 @@
+:root {
+    --pale-violet: hsl(276, 100%, 81%);
+    --moderate-violet: hsl(276, 55%, 52%);
+    --desaturated-dark-violet: hsl(271, 15%, 43%);
+    --grayish-blue: hsl(206, 6%, 79%);
+    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+    --dark-grayish-violet: hsl(270, 7%, 64%);
+    --light-magenta: hsl(293, 100%, 63%);
+    --light-violet: hsl(264, 100%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 20%, 96%);
+    --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+    --very-light-magenta: hsl(289, 100%, 72%);
+}
+* {
+    margin: 0;
+}
+
+body {
+    background-color: hsl(270, 20%, 96%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+.container {
+    width: inherit;
+    height: inherit;
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    background:linear-gradient(var(--light-magenta),var(--light-violet));
+    width: 30vw;
+    height: 90vh;
+    left: -5.5rem;
+    border-radius: 0px 0px 50% 50%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.phone {
+    position: relative;
+    left: 20%;
+}
+.border {
+    border: 10px solid var(--white);
+    position: absolute;
+    width: 250px;
+    top: 7rem;
+    min-height: 480px;
+    border-radius: 20px;
+    background-color: var(--light-grayish-violet);
+}
+
+.phone-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height:10px;
+    border-radius: 0 0 0px 15px;
+    z-index: 1;
+    background:var(--white);
+
+}
+
+.bg-white {
+    width: 50%;
+    height: 15px;
+    position: absolute;
+    left: 25%;
+    background-color: var(--white);
+    border-radius: 0 0 15px 15px;
+    z-index: 10;
+}
+
+.title {
+    background:linear-gradient(var(--light-magenta),var(--light-violet));
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    padding: 1.1rem 0rem;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.contact-img {
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    border: 1px solid var(--white);
+
+}
+.contact-img > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+.title {
+    display: flex;
+    gap: 0.5rem;
+}
+
+h1 {
+    margin-top: 0.5rem;
+    font-size: 16px;
+}
+
+.contact-description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.contact-description > p {
+    font-size: 9px;
+    color: var(--grayish-blue);
+}
+
+.phone-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    gap: 1rem;
+}
+
+.first-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.left-message {
+    background-color: var(--grayish-blue);
+    color:var(--very-light-magenta) ;
+    border-radius: 9px;
+    font-size: 9px;
+    width: 60%;
+    padding: 0.5rem 0.8rem;
+
+
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: flex-end;
+}
+
+.images img {
+    width: 30px;
+    border-radius: 10px;
+}
+
+.reply {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+    margin-right: 1rem;
+}
+.reply-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 9px;
+    align-items: flex-end;
+}
+
+.reply-messages p {
+    width: 70%;
+    font-size: 12px;
+    border-radius: 7px;
+    font-size: 9px;
+    background-color: var(--white);
+    padding: 0.3rem 0.7rem;
+
+}
+
+.second-message {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+
+}
+
+.second-message >p {
+    font-size: 9px;
+    width: 60%;
+    border-radius: 9px;
+    background-color: var(--grayish-blue);
+    color:var(--very-light-magenta) ;
+    padding: 0.3rem 0.7rem;
+
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    align-items: flex-start;
+}
+
+.pay-option {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 9px;
+    color: var(--white);
+    align-items: center;
+    padding: 0.7rem 0.7rem;
+    background:linear-gradient(to right,var(--light-magenta),var(--light-violet));
+}
+
+.circle {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 1px solid var(--grayish-blue);
+}
+
+.service {
+    font-weight: 400;
+    font-size: 9px;
+    color: var(--grayish-blue);
+}
+
+.price {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.input-msg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    width: 90%;
+    align-self: center;
+    border-radius: 30px;
+    padding: 0.3rem 0.3rem;
+}
+
+.send-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: black;
+}
+
+.send-icon span {
+    color: var(--white);
+}
+
+input {
+    font-size: 9px;
+    margin-left: 0.5rem;
+    border: none;
+    outline: none;
+    flex-grow: 1;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 4rem;
+    width: 40%;
+    left: 45%;
+    top: 18rem;
+    gap: 1rem;
+}
+
+.information h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+.information p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--dark-grayish-violet);
+}
+
+.right-background {
+    position: absolute;
+    border-radius: 50% 50% 0px 0px;
+    width: 30vw;
+    height: 85vh;
+    background-color: var(--grayish-blue);
+    right: -100px;
+    top: 15%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .background {
+        height: 50vh;
+        width: 70vw;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .border {
+        top:3rem;
+    }
+
+    .information {
+
+        width: 80%;
+        left: 7%;
+        top: 35rem;
+        height: 60%;
+        gap: 1rem;
+    }
+    .information h1 {
+        font-size: 24px;
+    }
+    .information p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
